@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255,255,255,0.95);
+  width: 95%;
+  max-width: 450px;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.header h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+  text-shadow: 1px 1px 5px #ffed99;
+}
+
+select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.day-card {
+  margin: 15px 0;
+  background: linear-gradient(135deg,#fefcea,#f1da36);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.day-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hour-row {
+  display: flex;
+  overflow-x: auto;
+}
+
+.hour-block {
+  min-width: 60px;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+.sunny { background: #ffdd57; color: #333; }
+.rainy { background: #57c1ff; }
+.cloudy { background: #a6a6a6; }
+.snowy { background: #a0e0ff; color: #333; }
+.storm { background: #555555; }
